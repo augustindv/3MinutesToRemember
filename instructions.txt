@@ -1,0 +1,8 @@
+Pour lancer le jeu en local il faut d'abord lancer un serveur http via NodeJS. Pour ce faire :
+- installer NodeJS https://nodejs.org/en/
+- ouvrir l'invite de commande NodeJS
+- changer le répertoire avec la commande "cd le_chemin_du_répertoire_du_jeu"
+- lancer la commande "http-server ."
+- aller sur http://127.0.0.1:8080/3MinutesToRemember.html
+
+Il est normalement aussi disponible en ligne à l'adresse suivante (sucesptible de changer, prévoir une bonne connexion internet) : http://nicolasdufort.com/3_minutes_to_remember_HD/3MinutesToRemember.html

@@ -1,0 +1,381 @@
+@charset "utf-8";
+/* CSS Document */
+
+@charset "utf-8";
+/* CSS Document */
+
+/* A1_Text_1 */
+div.A1_Text_1 { animation-play-state: paused; animation-delay: 3s; animation-duration: 4s; animation-name: A1_Text_1;}
+@keyframes A1_Text_1 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/* A1_Text_2 */
+div.A1_Text_2 { animation-play-state: paused; animation-delay: 7s; animation-duration: 4s; animation-name: A1_Text_2;}
+@keyframes A1_Text_2 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/*******************************************************************************************************************************/
+
+/* S3_Text_1 */
+div.S3_Text_1 { animation-play-state: paused; animation-delay: 3s; animation-duration: 4s; animation-name: S3_Text_1;}
+@keyframes S3_Text_1 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/* S3_Text_2 */
+div.S3_Text_2 { animation-play-state: paused; animation-delay: 7s; animation-duration: 4s; animation-name: S3_Text_2;}
+@keyframes S3_Text_2 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/* S3_Text_3 */
+div.S3_Text_3 { animation-play-state: paused; animation-delay: 11s; animation-duration: 4s; animation-name: S3_Text_3;}
+@keyframes S3_Text_3 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/* S3_Text_4 */
+div.S3_Text_4 { animation-play-state: paused; animation-delay: 15s; animation-duration: 4s; animation-name: S3_Text_4;}
+@keyframes S3_Text_4 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/*******************************************************************************************************************************/
+
+/* S5_Text_1 */
+div.S5_Text_1 { animation-play-state: paused; animation-delay: 3s; animation-duration: 4s; animation-name: S5_Text_1;}
+@keyframes S5_Text_1 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/* S5_Text_2 */
+div.S5_Text_2 { animation-play-state: paused; animation-delay: 7s; animation-duration: 4s; animation-name: S5_Text_2;}
+@keyframes S5_Text_2 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/* S5_Text_3 */
+div.S5_Text_3 { animation-play-state: paused; animation-delay: 11s; animation-duration: 4s; animation-name: S5_Text_3;}
+@keyframes S5_Text_3 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/* S5_Text_4 */
+div.S5_Text_4 { animation-play-state: paused; animation-delay: 15s; animation-duration: 4s; animation-name: S5_Text_4;}
+@keyframes S5_Text_4 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/* S5_Text_5 */
+div.S5_Text_5 { animation-play-state: paused; animation-delay: 19s; animation-duration: 4s; animation-name: S5_Text_5;}
+@keyframes S5_Text_5 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/*******************************************************************************************************************************/
+
+/* S2_Text_1 */
+div.S2_Text_1 { animation-play-state: paused; animation-delay: 3s; animation-duration: 4s; animation-name: S2_Text_1;}
+@keyframes S2_Text_1 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/* S2_Text_2 */
+div.S2_Text_2 { animation-play-state: paused; animation-delay: 7s; animation-duration: 4s; animation-name: S2_Text_2;}
+@keyframes S2_Text_2 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/* S2_Text_3 */
+div.S2_Text_3 { animation-play-state: paused; animation-delay: 11s; animation-duration: 4s; animation-name: S2_Text_3;}
+@keyframes S2_Text_3 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/* S2_Text_4 */
+div.S2_Text_4 { animation-play-state: paused; animation-delay: 15s; animation-duration: 4s; animation-name: S2_Text_4;}
+@keyframes S2_Text_4 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/* S2_Text_5 */
+div.S2_Text_5 { animation-play-state: paused; animation-delay: 19s; animation-duration: 4s; animation-name: S2_Text_5;}
+@keyframes S2_Text_5 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/* S2_Text_6 */
+div.S2_Text_6 { animation-play-state: paused; animation-delay: 23s; animation-duration: 4s; animation-name: S2_Text_6;}
+@keyframes S2_Text_6 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/*******************************************************************************************************************************/
+
+/* S1_Text_1 */
+div.S1_Text_1 { animation-play-state: paused; animation-delay: 3s; animation-duration: 4s; animation-name: S1_Text_1;}
+@keyframes S1_Text_1 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/* S1_Text_2 */
+div.S1_Text_2 { animation-play-state: paused; animation-delay: 7s; animation-duration: 4s; animation-name: S1_Text_2;}
+@keyframes S1_Text_2 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/* S1_Text_3 */
+div.S1_Text_3 { animation-play-state: paused; animation-delay: 11s; animation-duration: 4s; animation-name: S1_Text_3;}
+@keyframes S1_Text_3 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/* S1_Text_4 */
+div.S1_Text_4 { animation-play-state: paused; animation-delay: 15s; animation-duration: 4s; animation-name: S1_Text_4;}
+@keyframes S1_Text_4 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/*******************************************************************************************************************************/
+
+/* S4_Text_1 */
+div.S4_Text_1 { animation-play-state: paused; animation-delay: 3s; animation-duration: 4s; animation-name: S4_Text_1;}
+@keyframes S4_Text_1 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/* S4_Text_2 */
+div.S4_Text_2 { animation-play-state: paused; animation-delay: 7s; animation-duration: 4s; animation-name: S4_Text_2;}
+@keyframes S4_Text_2 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/* S4_Text_3 */
+div.S4_Text_3 { animation-play-state: paused; animation-delay: 11s; animation-duration: 4s; animation-name: S4_Text_3;}
+@keyframes S4_Text_3 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/* S4_Text_4 */
+div.S4_Text_4 { animation-play-state: paused; animation-delay: 15s; animation-duration: 4s; animation-name: S4_Text_4;}
+@keyframes S4_Text_4 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/* S4_Text_5 */
+div.S4_Text_5 { animation-play-state: paused; animation-delay: 19s; animation-duration: 4s; animation-name: S4_Text_5;}
+@keyframes S4_Text_5 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/*******************************************************************************************************************************/
+
+/* S6_Text_1 */
+div.S6_Text_1 { animation-play-state: paused; animation-delay: 3s; animation-duration: 4s; animation-name: S6_Text_1;}
+@keyframes S6_Text_1 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/* S6_Text_2 */
+div.S6_Text_2 { animation-play-state: paused; animation-delay: 7s; animation-duration: 4s; animation-name: S6_Text_2;}
+@keyframes S6_Text_2 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/* S6_Text_3 */
+div.S6_Text_3 { animation-play-state: paused; animation-delay: 11s; animation-duration: 4s; animation-name: S6_Text_3;}
+@keyframes S6_Text_3 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/* S6_Text_4 */
+div.S6_Text_4 { animation-play-state: paused; animation-delay: 15s; animation-duration: 4s; animation-name: S6_Text_4;}
+@keyframes S6_Text_4 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/* S6_Text_5 */
+div.S6_Text_5 { animation-play-state: paused; animation-delay: 19s; animation-duration: 4s; animation-name: S6_Text_5;}
+@keyframes S6_Text_5 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/*******************************************************************************************************************************/
+
+/* M1_Text_1 */
+div.M1_Text_1 { animation-play-state: paused; animation-delay: 5s; animation-duration: 4s; animation-name: M1_Text_1;}
+@keyframes M1_Text_1 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/* M1_Text_2 */
+div.M1_Text_2 { animation-play-state: paused; animation-delay: 9s; animation-duration: 4s; animation-name: M1_Text_2;}
+@keyframes M1_Text_2 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/* M1_Text_3 */
+div.M1_Text_3 { animation-play-state: paused; animation-delay: 13s; animation-duration: 4s; animation-name: M1_Text_3;}
+@keyframes M1_Text_3 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/* M1_Text_4 */
+div.M1_Text_4 { animation-play-state: paused; animation-delay: 17s; animation-duration: 4s; animation-name: M1_Text_4;}
+@keyframes M1_Text_4 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}
+
+/*******************************************************************************************************************************/
+
+/* M2_Text_1 */
+div.M2_Text_1 { animation-play-state: paused; animation-delay: 2s; animation-duration: 4s; animation-name: M2_Text_1;}
+@keyframes M2_Text_1 {
+from {opacity: 0; visibility: visible;}
+1% {opacity: 0; visibility: visible;}
+5% {opacity: 0.7;}
+95% {opacity: 0.7;}
+to {opacity: 0; visibility: hidden;}
+}

@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.dialogue {
+	position: absolute;
+    bottom: 70px;
+	width: 99%;
+}
+
+div.fondDialogue > span.etoile {
+	font-weight: 200;
+	font-size: 16px;
+	font-style: italic;
+}
+
+.fondDialogue {
+	font-weight: 400;
+	font-size: 22px;
+	margin: 0 auto;
+    background-color: #333333;
+	opacity: 0.7;
+	color: #ffffff;
+	text-align: center;
+	width: 900px;
+	padding: 10px;
+	visibility: hidden;
+}
+
+.colorPasseElle {
+    background-color: #E0912C;
+	border-radius: 10px;
+}
+
+.colorPasseLui {
+    background-color: #b26400;
+	border-radius: 10px;
+}
+
+.colorPresent {
+    background-color: #333333;
+}

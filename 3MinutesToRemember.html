@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3 Minutes To Remember</title>
+	<meta charset="utf-8">
+
+  <link href="css/dialogue.css" rel="stylesheet" type="text/css" rel="preload">
+  <link href="css/animationDialogue.css" rel="stylesheet" type="text/css" rel="preload">
+  <link href="css/animationOpacite.css" rel="stylesheet" type="text/css" rel="preload">
+  <link href="transition/animationOeil.css" rel="stylesheet" type="text/css" rel="preload">
+  <link href="css/style.css" rel="stylesheet" type="text/css" rel="preload">
+
+	<script src="js/aframe-v0.4.0.js"></script>
+	<script src="js/aframe-animation-component.js"></script>
+  <script src="js/aframe-event-set-component.js"></script>
+  <script src="js/aframe-template-component.js"></script>
+  <script src="js/aframe.js"></script>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/dialogue.js"></script>
+  <link href="js/aframe-master.js.map"></script>
+</head>
+<body onload="init()">
+  <div id="included_dialogue"></div>
+  <div id="shake">
+  <a-scene>
+
+    <a-assets>
+      <!--Porte d'entrée-->
+      <!--Porte d'entrée présent-->
+      <img id="porte-present-1" crossorigin="anonymous" src="img/porte/present/porte-present-1.png" rel="preload">
+      <img id="porte-present-2" crossorigin="anonymous" src="img/porte/present/porte-present-2.png" rel="preload">
+      <img id="porte-present-3" crossorigin="anonymous" src="img/porte/present/porte-present-3.png" rel="preload">
+      <img id="porte-present-4" crossorigin="anonymous" src="img/porte/present/porte-present-4.png" rel="preload">
+      <img id="porte-present-5" crossorigin="anonymous" src="img/porte/present/porte-present-5.png" rel="preload">
+      <!--Porte d'entrée passé-->
+      <img id="porte-passe-1" crossorigin="anonymous" src="img/porte/passe/porte-passe-1.png" rel="preload">
+      <img id="porte-passe-2" crossorigin="anonymous" src="img/porte/passe/porte-passe-2.png" rel="preload">
+      <img id="porte-passe-3" crossorigin="anonymous" src="img/porte/passe/porte-passe-3.png" rel="preload">
+      <img id="porte-passe-4" crossorigin="anonymous" src="img/porte/passe/porte-passe-4.png" rel="preload">
+      <img id="porte-passe-5" crossorigin="anonymous" src="img/porte/passe/porte-passe-5.png" rel="preload">
+
+      <!--Entrée-->
+      <!--Entrée présent-->
+      <img id="entree-present-1" crossorigin="anonymous" src="img/entree/present/entree-present-1.png" rel="preload">
+      <img id="entree-present-2" crossorigin="anonymous" src="img/entree/present/entree-present-2.png" rel="preload">
+      <img id="entree-present-3" crossorigin="anonymous" src="img/entree/present/entree-present-3.png" rel="preload">
+      <img id="entree-present-4" crossorigin="anonymous" src="img/entree/present/entree-present-4.png" rel="preload">
+      <img id="entree-present-5" crossorigin="anonymous" src="img/entree/present/entree-present-5.png" rel="preload">
+      <!--Entrée passé-->
+      <img id="entree-passe-1" crossorigin="anonymous" src="img/entree/passe/entree-passe-1.png" rel="preload">
+      <img id="entree-passe-2" crossorigin="anonymous" src="img/entree/passe/entree-passe-2.png" rel="preload">
+      <img id="entree-passe-3" crossorigin="anonymous" src="img/entree/passe/entree-passe-3.png" rel="preload">
+      <img id="entree-passe-4" crossorigin="anonymous" src="img/entree/passe/entree-passe-4.png" rel="preload">
+      <img id="entree-passe-5" crossorigin="anonymous" src="img/entree/passe/entree-passe-5.png" rel="preload">
+
+      <!--Salon-->
+      <!--Salon présent-->
+      <img id="salon-present-1" crossorigin="anonymous" src="img/salon/present/salon-present-1.png" rel="preload">
+      <img id="salon-present-2" crossorigin="anonymous" src="img/salon/present/salon-present-2.png" rel="preload">
+      <img id="salon-present-3" crossorigin="anonymous" src="img/salon/present/salon-present-3.png" rel="preload">
+      <img id="salon-present-4" crossorigin="anonymous" src="img/salon/present/salon-present-4.png" rel="preload">
+      <img id="salon-present-5" crossorigin="anonymous" src="img/salon/present/salon-present-5.png" rel="preload">
+      <!--Salon passé-->
+      <img id="salon-passe-1" crossorigin="anonymous" src="img/salon/passe/salon-passe-1.png" rel="preload">
+      <img id="salon-passe-2" crossorigin="anonymous" src="img/salon/passe/salon-passe-2.png" rel="preload">
+      <img id="salon-passe-3" crossorigin="anonymous" src="img/salon/passe/salon-passe-3.png" rel="preload">
+      <img id="salon-passe-4" crossorigin="anonymous" src="img/salon/passe/salon-passe-4.png" rel="preload">
+      <img id="salon-passe-5" crossorigin="anonymous" src="img/salon/passe/salon-passe-5.png" rel="preload">
+
+      <!--Chambre-->
+      <!--Chambre présent-->
+      <img id="chambre-present-1" crossorigin="anonymous" src="img/chambre/present/chambre-present-1.png" rel="preload">
+      <img id="chambre-present-2" crossorigin="anonymous" src="img/chambre/present/chambre-present-2.png" rel="preload">
+      <img id="chambre-present-3" crossorigin="anonymous" src="img/chambre/present/chambre-present-3.png" rel="preload">
+      <img id="chambre-present-4" crossorigin="anonymous" src="img/chambre/present/chambre-present-4.png" rel="preload">
+      <img id="chambre-present-5" crossorigin="anonymous" src="img/chambre/present/chambre-present-5.png" rel="preload">
+      <!--Chambre passé-->
+      <img id="chambre-passe-1" crossorigin="anonymous" src="img/chambre/passe/chambre-passe-1.png" rel="preload">
+      <img id="chambre-passe-2" crossorigin="anonymous" src="img/chambre/passe/chambre-passe-2.png" rel="preload">
+      <img id="chambre-passe-3" crossorigin="anonymous" src="img/chambre/passe/chambre-passe-3.png" rel="preload">
+      <img id="chambre-passe-4" crossorigin="anonymous" src="img/chambre/passe/chambre-passe-4.png" rel="preload">
+      <img id="chambre-passe-5" crossorigin="anonymous" src="img/chambre/passe/chambre-passe-5.png" rel="preload">
+
+      <!--Cuisine-->
+      <!--Cuisine présent-->
+      <img id="cuisine-present-1" crossorigin="anonymous" src="img/cuisine/present/cuisine-present-1.png" rel="preload">
+      <img id="cuisine-present-2" crossorigin="anonymous" src="img/cuisine/present/cuisine-present-2.png" rel="preload">
+      <img id="cuisine-present-3" crossorigin="anonymous" src="img/cuisine/present/cuisine-present-3.png" rel="preload">
+      <img id="cuisine-present-4" crossorigin="anonymous" src="img/cuisine/present/cuisine-present-4.png" rel="preload">
+      <img id="cuisine-present-5" crossorigin="anonymous" src="img/cuisine/present/cuisine-present-5.png" rel="preload">
+      <!--Cuisine passé-->
+      <img id="cuisine-passe-1" crossorigin="anonymous" src="img/cuisine/passe/cuisine-passe-1.png" rel="preload">
+      <img id="cuisine-passe-2" crossorigin="anonymous" src="img/cuisine/passe/cuisine-passe-2.png" rel="preload">
+      <img id="cuisine-passe-3" crossorigin="anonymous" src="img/cuisine/passe/cuisine-passe-3.png" rel="preload">
+      <img id="cuisine-passe-4" crossorigin="anonymous" src="img/cuisine/passe/cuisine-passe-4.png" rel="preload">
+      <img id="cuisine-passe-5" crossorigin="anonymous" src="img/cuisine/passe/cuisine-passe-5.png" rel="preload">
+
+      <!--Veranda-->
+      <!--Veranda présent-->
+      <img id="veranda-present-1" crossorigin="anonymous" src="img/veranda/present/veranda-present-1.png" rel="preload">
+      <img id="veranda-present-2" crossorigin="anonymous" src="img/veranda/present/veranda-present-2.png" rel="preload">
+      <img id="veranda-present-3" crossorigin="anonymous" src="img/veranda/present/veranda-present-3.png" rel="preload">
+      <img id="veranda-present-4" crossorigin="anonymous" src="img/veranda/present/veranda-present-4.png" rel="preload">
+      <img id="veranda-present-5" crossorigin="anonymous" src="img/veranda/present/veranda-present-5.png" rel="preload">
+      <!--Veranda passé-->
+      <img id="veranda-passe-1" crossorigin="anonymous" src="img/veranda/passe/veranda-passe-1.png" rel="preload">
+      <img id="veranda-passe-2" crossorigin="anonymous" src="img/veranda/passe/veranda-passe-2.png" rel="preload">
+      <img id="veranda-passe-3" crossorigin="anonymous" src="img/veranda/passe/veranda-passe-3.png" rel="preload">
+      <img id="veranda-passe-4" crossorigin="anonymous" src="img/veranda/passe/veranda-passe-4.png" rel="preload">
+      <img id="veranda-passe-5" crossorigin="anonymous" src="img/veranda/passe/veranda-passe-5.png" rel="preload">
+
+      <!--Front-->
+      <!--Veranda passé-->
+      <img id="front-Z1" crossorigin="anonymous" src="img/front/Graph-Objets-Etiquette.png" rel="preload">
+      <img id="front-Z2" crossorigin="anonymous" src="img/front/Graph-Objets-CartePostale.png" rel="preload">
+      <img id="front-Z3" crossorigin="anonymous" src="img/front/Graph-Objets-Lettre.png" rel="preload">
+      <img id="front-Z4" crossorigin="anonymous" src="img/front/Graph-Objets-Smartphone.png" rel="preload">
+      <img id="front-Z5" crossorigin="anonymous" src="img/front/Graph-Objets-Album.png" rel="preload">
+      <img id="front-Z6" crossorigin="anonymous" src="img/front/Graph-Objets-Journal.png" rel="preload">
+      <img id="front-Z7" crossorigin="anonymous" src="img/front/Graph-Objets-Photo.png" rel="preload">
+      <img id="front-Z8" crossorigin="anonymous" src="img/front/Graph-Objets-PostIt.png" rel="preload">
+      <img id="front-Z9" crossorigin="anonymous" src="img/front/Graph-Objets-AfficheEvacuation.png" rel="preload">
+
+      <audio id="credits" crossorigin="anonymous" src="sons/Credits.mp3" muted loop poolSize="3" rel="preload">></audio> <!-- autoplay -->
+      <audio id="cuisine_petitdejeuner" crossorigin="anonymous" src="sons/Cuisine_Petitdejeuner.mp3" loop poolSize="3" rel="preload">></audio> <!-- autoplay -->
+      <audio id="global_papier" crossorigin="anonymous" src="sons/Global_Papier.mp3" poolSize="3" rel="preload">></audio> <!-- autoplay -->
+      <audio id="global_passe" crossorigin="anonymous" src="sons/Global_Passe.mp3" muted poolSize="3" rel="preload">></audio> <!-- autoplay -->
+      <audio id="global_pleure" crossorigin="anonymous" src="sons/Global_Pleure.mp3" muted loop poolSize="3" rel="preload">></audio> <!-- autoplay -->
+      <audio id="global_present" crossorigin="anonymous" src="sons/Global_Present.mp3" muted poolSize="3" rel="preload">></audio> <!-- autoplay -->
+      <audio id="switch_pieces" crossorigin="anonymous" src="sons/Switch_Pieces.mp3" poolSize="3" rel="preload">></audio> <!-- autoplay -->
+      <audio id="switch_pas" crossorigin="anonymous" src="sons/Switch_Pas.mp3" poolSize="3" rel="preload">></audio> <!-- autoplay -->
+      <audio id="veranda_passe_audio" crossorigin="anonymous" src="sons/Veranda_Passe.mp3" loop poolSize="3" rel="preload">></audio> <!-- autoplay -->
+      <audio id="chambre_passe_audio" crossorigin="anonymous" src="sons/Chambre_Passe.mp3" loop poolSize="3" rel="preload">></audio> <!-- autoplay -->
+
+      <audio id="sound1" crossorigin="anonymous" src="tmp.mp3" muted loop></audio> <!-- autoplay -->
+
+      <!-- Image link template to be reused. -->
+      <script id="link" type="text/html">
+        <a-entity class="link"
+          geometry="primitive: circle; radius: ${radius};"
+          material="opacity: 0; side: double"
+          change-scene="on: click; target: ${tar}; initial: ${init}; unlocked: ${unlocked}"
+          set-image="on: click; target1: #image-360-1; target2: #image-360-2; target3: #image-360-3; target4: #image-360-4; target5: #image-360-5; src: ${tar}; src2: ${init}; front: ${front};
+          unlock: ${unlock}"
+          sound="on: click; src: ${sound}"
+          ></a-entity>
+      </script><
+
+      <script id="out-script" type="text/html">
+        <a-entity class="out-script"
+          change-scene="on: click; target: ${tar}; initial: ${init}; unlocked: ${unlocked}"
+          set-image="on: click; target1: #image-360-1; target2: #image-360-2; target3: #image-360-3; target4: #image-360-4; target5: #image-360-5; src: ${tar}; src2: ${init}; front: ${front};"
+        ></a-entity>
+      </script>
+
+      <script id="sound" type="text/html">
+        <a-entity class="sound"
+          geometry="primitive: circle; radius: ${rad}"
+          material="color: ${color}; side: double; opacity: 0;"
+          volume-in="on: mouseenter; target: ; voltarget: ${vol}"
+          volume-out="on: mouseleave; target: ; voltarget: 0"></a-entity>
+      </script>
+    </a-assets>
+
+    <!-- Skies -->
+    <a-sky id="image-360-5" src="#porte-present-5" rotation="0 -130 0"> </a-sky>
+    <a-sky id="image-360-4" src="#porte-present-4" rotation="0 -130 0"> </a-sky>
+    <a-sky id="image-360-3" src="#porte-present-3" rotation="0 -130 0"> </a-sky>
+    <a-sky id="image-360-2" src="#porte-present-2" rotation="0 -130 0"> </a-sky>
+    <a-sky id="image-360-1" src="#porte-present-1" rotation="0 -130 0"> </a-sky>
+
+    <a-entity camera look-controls>
+      <a-cursor id="cursor"
+        animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150"
+        animation__fusing="property: fusing; startEvents: fusing; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1500"
+        event-set__1="_event: mouseenter; color: springgreen"
+        event-set__2="_event: mouseleave; color: black"
+        raycaster="objects: .link, .out-script"></a-cursor>
+    </a-entity>
+
+    <!-- Pièces -->
+    <!--Porte d'entrée-->
+    <!--Porte d'entrée présent-->
+    <a-entity id="porte-present">
+      <a-entity id="S1" template="src: #link" data-tar="#porte-passe" data-init="#porte-present"  
+        data-sound="#sound1" data-radius="4.5" data-unlocked="true" data-unlock="" data-front=""
+        onclick="S1_Text()" position="50.7 -10 -16.5" rotation="0 -73 0"></a-entity>
+      <a-entity geometry="primitive: ring; radiusInner: 4.7; radiusOuter: 5" material="color: rgb(242, 101, 34); opacity: 0.3; side: double" position="50.7 -10 -16.5" rotation="0 -73 0" 
+        data-unlocked="true"></a-entity>
+      <a-entity id="P1" template="src: #link" data-tar="#entree-present" data-init="#porte-present"  
+        data-sound="" data-radius="3.2" data-unlocked="true" data-unlock="" data-front=""
+        onclick="soundswitch()" position="22 -19 -14.5" rotation="-1 129 8"></a-entity>
+      <a-entity geometry="primitive: ring; radiusInner: 3.3; radiusOuter: 3.5" material="color: rgb(109, 207, 246); opacity: 0.3; side: double" position="22 -19 -14.5" rotation="-1 129 8" 
+        data-unlocked="true"></a-entity>
+    </a-entity>
+    <!--Porte d'entrée passé-->
+    <a-entity id="porte-passe" visible="false">
+      <a-entity id="out-porte" class="out" template="src: #out-script" data-tar="#porte-present" data-init="#porte-passe"
+        data-unlock="" data-unlocked="true" data-front="" look-at="[camera]" visible="false"></a-entity>
+    </a-entity>
+
+    <!--Entrée-->
+    <!--Entrée présent-->
+    <a-entity id="entree-present" visible="false">
+      <a-entity id="Z2" template="src: #link" data-tar="#entree-passe" data-init="#entree-present"  
+        data-sound="" data-radius="5.6" data-unlocked="true" data-unlock="" data-front="#front-Z2"
+        onclick="globalpapier(2000);" position="-19 -65.5 -6.8" rotation="80 0 0" visible="false"></a-entity>
+      <a-entity geometry="primitive: ring; radiusInner: 5.7; radiusOuter: 6" material="color: rgb(242, 101, 34); opacity: 0.3; side: double" position="-19 -65.5 -6.8" rotation="80 0 0" 
+        data-unlocked="true"></a-entity>
+      <a-entity id="S2" template="src: #link" data-tar="#entree-passe" data-init="#entree-present"  
+        data-sound="" data-radius="9.6" data-unlocked="true" data-unlock="" data-front=""
+        onclick="S2_Text(); globalpapier(2000);" position="53 -23 17" rotation="0 60 0" visible="false"></a-entity>
+      <a-entity geometry="primitive: ring; radiusInner: 9.7; radiusOuter: 10" material="color: rgb(242, 101, 34); opacity: 0.3; side: double" position="53 -23 17" rotation="0 60 0" 
+        data-unlocked="true"></a-entity>
+      <a-entity id="P4" template="src: #link" data-tar="#salon-present" data-init="#entree-present" 
+        data-sound="" data-radius="7.6" data-unlocked="true" data-unlock="" data-front=""
+        onclick="soundswitchpas()" position="-25 -10.5 -29" rotation="0 35 0" visible="false"></a-entity>
+      <a-entity geometry="primitive: ring; radiusInner: 7.7; radiusOuter: 8" material="color: rgb(109, 207, 246); opacity: 0.3; side: double" position="-25 -10.5 -29" rotation="0 35 0" 
+        data-unlocked="true"></a-entity>
+      <a-entity id="P3" template="src: #link" data-tar="#chambre-present" data-init="#entree-present"
+        data-sound="" data-radius="4.6" data-unlocked="true" data-unlock="" data-front=""
+        onclick="soundswitch()" position="45 -11.7 -44.5" rotation="0 140 0" visible="false"></a-entity>
+      <a-entity geometry="primitive: ring; radiusInner: 4.7; radiusOuter: 5" material="color: rgb(109, 207, 246); opacity: 0.3; side: double" position="45 -11.7 -44.5" rotation="0 140 0" 
+        data-unlocked="true"></a-entity>
+      <a-entity id="P2" template="src: #link" data-tar="#cuisine-present" data-init="#entree-present"
+        data-sound="" data-radius="4.6" data-unlocked="true" data-unlock="" data-front=""
+        onclick="soundswitch()" position="49 -11 -25.5" rotation="0 120 0" visible="false"></a-entity>
+      <a-entity geometry="primitive: ring; radiusInner: 4.7; radiusOuter: 5" material="color: rgb(109, 207, 246); opacity: 0.3; side: double" position="49 -11 -25.5" rotation="0 120 0" 
+        data-unlocked="true"></a-entity>
+    </a-entity>
+    <!--Entrée passé-->
+    <a-entity id="entree-passe" visible="false">
+      <a-entity id="out-entree" class="out" template="src: #out-script" data-tar="#entree-present" data-init="#entree-passe"
+        data-unlock="" data-unlocked="true" data-front="" look-at="[camera]" visible="false"></a-entity>
+    </a-entity>
+
+    <!--Salon-->
+    <!--Salon présent-->
+    <a-entity id="salon-present" visible="false">
+      <a-entity id="Z6" template="src: #link" data-tar="#salon-passe" data-init="#salon-present"
+        data-sound="" data-radius="9.6" data-unlocked="true" data-unlock="" data-front="#front-Z6"
+        onclick="globalpapier(2000);" position="-28 -32 -61" rotation="-20 25 0" visible="false"></a-entity>
+      <a-entity geometry="primitive: ring; radiusInner: 9.7; radiusOuter: 10" material="color: rgb(242, 101, 34); opacity: 0.3; side: double" position="-28 -32 -61" rotation="-20 25 0" 
+        data-unlocked="true"></a-entity>
+      <a-entity id="Z5" template="src: #link" data-tar="#salon-passe" data-init="#salon-present"
+        data-sound="" data-radius="9.6" data-unlocked="true" data-unlock="" data-front="#front-Z5"
+        onclick="globalpapier(2000);" position="-32.5 -42.4 10" rotation="100 70 0" visible="false"></a-entity>
+      <a-entity geometry="primitive: ring; radiusInner: 9.7; radiusOuter: 10" material="color: rgb(242, 101, 34); opacity: 0.3; side: double" position="-32.5 -42.4 10" rotation="100 70 0" 
+        data-unlocked="true"></a-entity>
+      <a-entity id="S4" template="src: #link" data-tar="#salon-passe" data-init="#salon-present"
+        data-sound="#sound1" data-radius="9.6" data-unlocked="true" data-unlock="" data-front=""
+        onclick="S4_Text()" position="22 -24 -3" rotation="70 120 0" visible="false"></a-entity>
+      <a-entity geometry="primitive: ring; radiusInner: 9.7; radiusOuter: 10" material="color: rgb(242, 101, 34); opacity: 0.3; side: double" position="22 -24 -3" rotation="70 120 0" 
+        data-unlocked="true"></a-entity>
+      <a-entity id="P8" template="src: #link" data-tar="#veranda-present" data-init="#salon-present"
+        data-sound="" data-radius="9.5" data-unlocked="true" data-unlock="" data-front=""
+        onclick="soundswitch()" position="54 -14 -60" rotation="0 150 0" visible="false"></a-entity>
+      <a-entity geometry="primitive: ring; radiusInner: 9.6; radiusOuter: 10" material="color: rgb(109, 207, 246); opacity: 0.3; side: double" position="54 -14 -60" rotation="0 150 0" 
+        data-unlocked="true"></a-entity>
+      <a-entity id="P6" template="src: #link" data-tar="#entree-present" data-init="#salon-present"
+        data-sound="" data-radius="9.6" data-unlocked="true" data-unlock="" data-front=""
+        onclick="soundswitchpas()" position="21.3 -9 36" rotation="0 45 0" visible="false"></a-entity>
+      <a-entity geometry="primitive: ring; radiusInner: 9.7; radiusOuter: 10" material="color: rgb(109, 207, 246); opacity: 0.3; side: double" position="21.3 -9 36" rotation="0 45 0" 
+        data-unlocked="true"></a-entity>
+    </a-entity>
+    <!--Salon passé-->
+    <a-entity id="salon-passe" visible="false">
+      <a-entity id="out-salon" class="out" template="src: #out-script" data-tar="#salon-present" data-init="#salon-passe"
+        data-unlock="" data-unlocked="true" data-front="" look-at="[camera]" visible="false"></a-entity>
+    </a-entity>
+
+    <!--Chambre-->
+    <!--Chambre présent-->
+    <a-entity id="chambre-present" visible="false">
+      <a-entity id="Z3" template="src: #link" data-tar="#chambre-passe" data-init="#chambre-present" 
+        data-sound="" data-radius="9.5" data-radius="10" data-unlocked="true" data-unlock="" data-front="#front-Z3"
+        onclick="globalpapier(2000);" position="-70 -37 -16" rotation="0 80 0"></a-entity>
+      <a-entity geometry="primitive: ring; radiusInner: 9.7; radiusOuter: 10" material="color: rgb(242, 101, 34); opacity: 0.3; side: double" position="-70 -37 -16" rotation="0 80 0" 
+        data-unlocked="true"></a-entity>
+      <a-entity id="Z4" template="src: #link" data-tar="#chambre-passe" data-init="#chambre-present" 
+        data-sound="" data-radius="4.3" data-unlocked="true" data-unlock="" data-front="#front-Z4"
+        onclick="globalpapier(2000);" position="27 -30.8 30" rotation="0 40 0"></a-entity>
+      <a-entity geometry="primitive: ring; radiusInner: 4.5; radiusOuter: 4.8" material="color: rgb(242, 101, 34); opacity: 0.3; side: double" position="27 -30.8 30" rotation="0 40 0"
+        data-unlocked="true"></a-entity>
+      <a-entity id="S3" template="src: #link" data-tar="#chambre-passe" data-init="#chambre-present" 
+        data-sound="#sound1" data-radius="4.5" data-unlocked="true" data-unlock="" data-front=""
+        onclick="S3_Text()" position="-4 -27 25" rotation="20 -9 -2"></a-entity>
+      <a-entity geometry="primitive: ring; radiusInner: 4.8; radiusOuter: 5" material="color: rgb(242, 101, 34); opacity: 0.3; side: double" position="-4 -27 25" rotation="20 -9 -2"
+        data-unlocked="true"></a-entity>
+      <a-entity id="P5" template="src: #link" data-tar="#entree-present" data-init="#chambre-present" 
+        data-sound="" data-radius="3.5" data-unlocked="true" data-unlock="" data-front=""
+        onclick="soundswitch()" position="15 -15 37" rotation="0 45 0"></a-entity>
+      <a-entity geometry="primitive: ring; radiusInner: 3.7; radiusOuter: 4" material="color: rgb(109, 207, 246); opacity: 0.3; side: double" position="15 -15 37" rotation="0 45 0"
+        data-unlocked="true"></a-entity>
+    </a-entity>
+    <!--Chambre passé-->
+    <a-entity id="chambre-passe" visible="false">
+      <a-entity id="out-chambre" class="out" template="src: #out-script" data-tar="#chambre-present" data-init="#chambre-passe"
+        data-unlock="" data-unlocked="true" data-front="" look-at="[camera]" visible="false"></a-entity>
+    </a-entity>
+
+    <!--Cuisine-->
+    <!--Cuisine présent-->
+    <a-entity id="cuisine-present" visible="false">
+      <a-entity id="Z8" template="src: #link" data-tar="#cuisine-passe" data-init="#cuisine-present"
+        data-sound="" data-radius="3.6" data-unlocked="true" data-unlock="" data-front="#front-Z8"
+        onclick="globalpapier(2000);" position="48 -10 5.8" rotation="8 80 0" visible="false"></a-entity>
+      <a-entity geometry="primitive: ring; radiusInner: 3.7; radiusOuter: 4" material="color: rgb(242, 101, 34); opacity: 0.3; side: double" position="48 -10 5.8" rotation="8 80 0"
+        data-unlocked="true"></a-entity>
+      <a-entity id="Z7" template="src: #link" data-tar="#cuisine-passe" data-init="#cuisine-present"
+        data-sound="" data-radius="6.6" data-unlocked="true" data-unlock="" data-front="#front-Z7"
+        onclick="globalpapier(2000);" position="47 -8.8 17.8" rotation="0 72 0" visible="false"></a-entity>
+      <a-entity geometry="primitive: ring; radiusInner: 6.7; radiusOuter: 7" material="color: rgb(242, 101, 34); opacity: 0.3; side: double" position="47 -8.8 17.8" rotation="0 72 0"
+        data-unlocked="true"></a-entity>
+      <a-entity id="S5" template="src: #link" data-tar="#cuisine-passe" data-init="#cuisine-present"
+        data-sound="#sound1" data-radius="3.6" data-unlocked="true" data-unlock="" data-front=""
+        onclick="S5_Text()" position="-2 -24.9 -24.5" rotation="-16 9 62" visible="false"></a-entity>
+      <a-entity geometry="primitive: ring; radiusInner: 3.7; radiusOuter: 4" material="color: rgb(242, 101, 34); opacity: 0.3; side: double" position="-2 -24.9 -24.5" rotation="-16 9 62"
+        data-unlocked="true"></a-entity>
+      <a-entity id="P7" template="src: #link" data-tar="#entree-present" data-init="#cuisine-present"
+        data-sound="" data-radius="6.6" data-unlocked="true" data-unlock="" data-front=""
+        onclick="soundswitch()" position="-65 -26.7 4.4" rotation="-23.5 90 0" visible="false"></a-entity>
+      <a-entity geometry="primitive: ring; radiusInner: 6.7; radiusOuter: 7" material="color: rgb(109, 207, 246); opacity: 0.3; side: double" position="-65 -26.7 4.4" rotation="-23.5 90 0"
+        data-unlocked="true"></a-entity>
+    </a-entity>
+    <!--Cuisine passé-->
+    <a-entity id="cuisine-passe" visible="false">
+      <a-entity id="out-cuisine" class="out" template="src: #out-script" data-tar="#cuisine-present" data-init="#cuisine-passe"
+        data-unlock="" data-unlocked="true" data-front="" look-at="[camera]" visible="false"></a-entity>
+    </a-entity>
+
+    <!--Veranda-->
+    <!--Veranda présent-->
+    <a-entity id="veranda-present" visible="false">
+      <a-entity id="S6" template="src: #link" data-tar="#veranda-passe" data-init="#veranda-present"
+        data-sound="#sound1" data-radius="9.6" data-unlocked="true" data-unlock="" data-front=""
+        onclick="S6_Text()" position="52 -22 -64" rotation="0 140 0" visible="false"></a-entity>
+      <a-entity geometry="primitive: ring; radiusInner: 9.7; radiusOuter: 10" material="color: rgb(242, 101, 34); opacity: 0.3; side: double" position="52 -22 -64" rotation="0 140 0" 
+        data-unlocked="true"></a-entity>
+      <a-entity id="P9" template="src: #link" data-tar="#salon-present" data-init="#veranda-present"
+        data-sound="" data-radius="9.6" data-unlocked="true" data-unlock="" data-front=""
+        onclick="soundswitch()" position="-26 -19 35" rotation="0 140 0" visible="false"></a-entity>
+      <a-entity geometry="primitive: ring; radiusInner: 9.7; radiusOuter: 10" material="color: rgb(109, 207, 246); opacity: 0.3; side: double" position="-26 -19 35" rotation="0 140 0" 
+        data-unlocked="true"></a-entity>
+    </a-entity>
+    <!--Veranda passé-->
+    <a-entity id="veranda-passe" visible="false">
+      <a-entity id="out-present" class="out" template="src: #out-script" data-tar="#veranda-present" data-init="#veranda-passe"
+        data-unlock="" data-unlocked="true" data-front="" look-at="[camera]" visible="false"></a-entity>
+    </a-entity>
+
+  </a-scene>
+  </div>
+  <img id="leave" src="img/front/Graph-Close.png" rel="preload">
+</body>
+</html>

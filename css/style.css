@@ -1,0 +1,205 @@
+body {
+	background-color: black;
+	position: relative;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+     -khtml-user-select: none; /* Konqueror */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.a-enter-vr {
+	display: none;
+}
+
+#leave {
+	position: absolute;
+	top: 95%;
+	left: 49%;
+	z-index: 50;
+	display: none;
+}
+
+#creditsend {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#front {
+	position: absolute;
+	top: 0;
+	visibility: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+#outfront {
+	position: absolute;
+	opacity: 0;
+	top: 95%;
+	left: 49%;
+	z-index: 50;
+	visibility: hidden;
+}
+
+.frontforw {animation-timing-function: ease-in-out; animation-fill-mode: forwards; animation-delay: 2s; animation-duration: 1s; animation-name: slide;}
+@keyframes slide {
+from {top: 100%; visibility: visible;}
+to {top: 0; visibility: visible;}
+}
+.outfrontforw {animation-timing-function: ease-in-out; animation-fill-mode: forwards; animation-delay: 2s; animation-duration: 3s; animation-name: slideout;}
+@keyframes slideout {
+from {opacity: 0; visibility: visible;}
+to {opacity: 1; visibility: visible;}
+}
+
+.outfrontback {animation-name: slideoutback; animation-play-state: paused; animation-timing-function: ease-in-out; animation-fill-mode: forwards; animation-duration: 1s;}
+@keyframes slideoutback {
+from {opacity: 1; visibility: visible;}
+to {opacity: 0; visibility: visible;}
+}
+.frontback {animation-name: slideback; animation-play-state: paused; animation-timing-function: ease-in-out; animation-fill-mode: forwards; animation-duration: 1s;}
+@keyframes slideback {
+from {top: 0%; visibility: visible;}
+to {top: 100%; visibility: visible;}
+}
+
+#transition {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#fade {
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#fade {animation-duration: 3s; animation-name: fade;}
+@keyframes fade {
+from {opacity: 0;}
+33% {opacity: 1;}
+66% {opacity: 1;}
+to {opacity: 0;}
+}
+
+
+.shake1 { animation-timing-function: cubic-bezier(1, -0.04, 0.23, 1.04); animation-duration: 1s; animation-iteration-count: 20; animation-name: shake1;}
+@keyframes shake1 {
+	10%, 90% {
+	    transform: translate3d(-1px, 0, 0);
+	}
+	20%, 80% {
+	    transform: translate3d(1px, 0, 0);
+	}
+	30%, 50%, 70% {
+	    transform: translate3d(-2px, 0, 0);
+	}
+	40%, 60% {
+	    transform: translate3d(1px, 0, 0);
+	}
+}
+
+.shake2 {animation-timing-function: cubic-bezier(0.56, 0.01, 0.58, 0.91); animation-duration: 1s; animation-iteration-count: 20; animation-name: shake2;}
+@keyframes shake2 {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.shake3 {animation-timing-function: cubic-bezier(0.34, -0.11, 0.38, 1.96); animation-duration: 0.5s; animation-iteration-count: 40; animation-name: shake3;}
+@keyframes shake3 {
+  10%, 90% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(4px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(1px, 0, 0);
+  }
+}
+
+.endworld {animation-duration: 30s; animation-timing-function: cubic-bezier(1, 0.01, 0.74, 1.61); animation-fill-mode: forwards; animation-name: endworld;}
+@keyframes endworld {
+	from {opacity: 1;}
+	66% {opacity: 0.8;}
+	to {opacity: 0;}
+}
+
+.endworldreverse {animation-duration: 5s; animation-timing-function: ease-in-out; animation-fill-mode: forwards; animation-name: endworldreverse;}
+@keyframes endworldreverse {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+.bodyanim {animation-delay: 120s; animation-duration: 60s; animation-name: bodyanim;}
+@keyframes bodyanim {
+	3.33%, 30% {
+	    transform: translate3d(-1px, 0, 0);
+	    animation-timing-function: cubic-bezier(1, -0.04, 0.23, 1.04);
+	}
+	6.66%, 26.66% {
+	    transform: translate3d(1px, 0, 0);
+	}
+	10%, 16.66%, 23.33% {
+	    transform: translate3d(-2px, 0, 0);
+	}
+	13.33%, 20% {
+	    transform: translate3d(1px, 0, 0);
+	}
+
+	33.33%, 60% {
+		animation-timing-function: cubic-bezier(0.34, -0.11, 0.38, 1.96);
+		transform: translate3d(-1px, 0, 0);
+	}
+	36.66%, 56.66% {
+		transform: translate3d(2px, 0, 0);
+	}
+	40%, 46.66%, 53.33% {
+		transform: translate3d(-4px, 0, 0);
+	}
+	43.33%, 50% {
+		transform: translate3d(4px, 0, 0);
+	}
+
+	63.33%, 90% {
+		animation-timing-function: cubic-bezier(0.34, -0.11, 0.38, 1.96);
+		transform: translate3d(-2px, 0, 0);
+	}
+	66.66%, 86.66% {
+		transform: translate3d(4px, 0, 0);
+	}
+	70%, 80%, 83.33% {
+		transform: translate3d(-4px, 0, 0);
+	}
+	73.33%, 76.66% {
+		transform: translate3d(1px, 0, 0);
+	}
+}
