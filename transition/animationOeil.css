@@ -18,7 +18,7 @@ from {bottom: 100%; position: absolute; z-index:500;}
 30% {bottom: 30%; position: absolute; z-index:500;}
 40% {bottom: 45%; position: absolute; z-index:500;}
 50% {bottom: 30%; position: absolute; z-index:500;}
-70% {bottom: 30%; position: absolute; z-index:500;}
+75% {bottom: 30%; position: absolute; z-index:500;}
 to {bottom: 100%; position: absolute; z-index:500;}
 }
 
@@ -29,6 +29,6 @@ from {top: 100%; position: absolute; z-index:600;}
 30% {top: 30%; position: absolute; z-index:600;}
 40% {top: 55%; position: absolute; z-index:600;}
 50% {top: 30%; position: absolute; z-index:600;}
-70% {top: 30%; position: absolute; z-index:600;}
+75% {top: 30%; position: absolute; z-index:600;}
 to {top: 100%; position: absolute; z-index:600;}
 }
