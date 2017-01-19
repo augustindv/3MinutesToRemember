@@ -1,5 +1,6 @@
 var cssinterval = -1;
 var endinterval = -1;
+var intervalshake = -1;
 
 var credits = document.getElementById("credits");
 var cuisine_petitdejeuner = document.getElementById("cuisine_petitdejeuner");
@@ -68,6 +69,9 @@ function init() {
   veranda_passe = document.getElementById("veranda_passe_audio");
   chambre_passe = document.getElementById("chambre_passe_audio");
   switch_pas = document.getElementById("switch_pas");
+
+  veranda_passe.volume = 0;
+  chambre_passe.volume = 0;
 
   global_passe.volume = 0;
   global_passe.muted = false; 
@@ -169,6 +173,12 @@ $(function() {
     fade_out_audio(cuisine_petitdejeuner, 0);
     fade_out_audio(veranda_passe, 0);
     fade_out_audio(chambre_passe, 0);
+
+    var creditsfond = document.createElement("img");
+    creditsfond.setAttribute('id', 'creditsfond');
+    creditsfond.setAttribute('src', 'img/Fond_Credits.jpg');
+    document.body.appendChild(creditsfond);
+
     var creditsend = document.createElement("video");
     creditsend.setAttribute('autoplay', true);
     creditsend.removeAttribute('controls');
@@ -179,21 +189,23 @@ $(function() {
     $("#leave").css("display", "none")
   }, 190000);
   window.setTimeout(function() {
-    window.setInterval( function() {
+    intervalshake = window.setInterval( function() {
       var className = document.getElementById("shake").className;
       if ($(actualsceneselector).attr('id').includes("present") && !className.includes("shake1")) {
         document.getElementById("shake").className = "shake1";
-      } else {
-         document.getElementById("shake").className = "";
+      } else if (!$(actualsceneselector).attr('id').includes("present")) {
+        document.getElementById("shake").className = "";
       }
     }, 400);
   }, 140000);
   window.setTimeout(function() {
+    window.clearInterval(intervalshake);
+    document.getElementById("shake").className = "";
     window.setInterval( function() {
       var className = document.getElementById("shake").className;
       if ($(actualsceneselector).attr('id').includes("present") && !className.includes("shake3")) {
         document.getElementById("shake").className = "shake3";
-      } else {
+      } else if (!$(actualsceneselector).attr('id').includes("present")) {
          document.getElementById("shake").className = "";
       }
     }, 400);

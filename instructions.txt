@@ -1,8 +1,19 @@
+Pour une meilleure expérience, il est préférable de jouer sur Chrome, en plein écran (F11) et avec un casque audio.
+
 Pour lancer le jeu en local il faut d'abord lancer un serveur http via NodeJS. Pour ce faire :
 - installer NodeJS https://nodejs.org/en/
-- ouvrir l'invite de commande NodeJS
+- ouvrir l'invite de commande NodeJS : Node.js command prompt
 - changer le répertoire avec la commande "cd le_chemin_du_répertoire_du_jeu"
+- lancer la commande "npm install http-server -g"
 - lancer la commande "http-server ."
 - aller sur http://127.0.0.1:8080/3MinutesToRemember.html
 
-Il est normalement aussi disponible en ligne à l'adresse suivante (sucesptible de changer, prévoir une bonne connexion internet) : http://nicolasdufort.com/3_minutes_to_remember_HD/3MinutesToRemember.html
+Il est normalement aussi disponible en ligne à l'adresse suivante (sucesptible de changer, version possiblement non à jour, prévoir une bonne connexion internet) :
+http://nicolasdufort.com/3_minutes_HD/
+Pour une connexion lente : http://nicolasdufort.com/3_minutes/
+
+Comment jouer ?
+
+Le déplacement de la caméra se fait par glissement de l'image. Le pointeur au milieu de l'écran fait office de "viseur", un click sur l'écran engendre un click pour ce viseur.
+Les interactions sont affichées par des cercles de couleurs bleu (pour les passages entre les lieux) et orange (pour les souvenirs).
+Le retour dans le présent se fait par le biais de la croix placée en bas de l'écran.
