@@ -14,6 +14,7 @@
 	<script src="js/aframe-animation-component.js"></script>
   <script src="js/aframe-event-set-component.js"></script>
   <script src="js/aframe-template-component.js"></script>
+  <script src="js/aframe-mouse-cursor-component.min.js"></script>
   <script src="js/aframe.js"></script>
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/main.js"></script>
@@ -169,7 +170,7 @@
     <a-sky id="image-360-2" src="#porte-present-2" rotation="0 -130 0"> </a-sky>
     <a-sky id="image-360-1" src="#porte-present-1" rotation="0 -130 0"> </a-sky>
 
-    <a-entity camera look-controls>
+    <a-entity camera look-controls mouse-cursor>
       <a-cursor id="cursor"
         animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150"
         animation__fusing="property: fusing; startEvents: fusing; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1500"
