@@ -171,12 +171,17 @@
     <a-sky id="image-360-1" src="#porte-present-1" rotation="0 -130 0"> </a-sky>
 
     <a-entity camera look-controls mouse-cursor>
-      <a-cursor id="cursor"
+      <!--<a-cursor id="cursor"
         animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150"
         animation__fusing="property: fusing; startEvents: fusing; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1500"
         event-set__1="_event: mouseenter; color: springgreen"
         event-set__2="_event: mouseleave; color: black"
-        raycaster="objects: .link, .out-script"></a-cursor>
+        raycaster="objects: .link, .out-script"></a-cursor>-->
+        <a-entity cursor="fuse: true; maxDistance: 30; timeout: 500"
+          position="-100 0 -5"
+          geometry="primitive: ring"
+          raycaster="objects: .link, .out-script">
+  </a-entity>
     </a-entity>
 
     <!-- Pièces -->
